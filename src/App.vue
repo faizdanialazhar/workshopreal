@@ -23,10 +23,10 @@ onMounted(async()=>{
 </script>
 
 <template>
-    
+    <p>Ola</p>
     <form>
         <input v-model="name" class="bg-pink-900 text-black px-4 py-1 rounded-lg mx-3 my-3"/>
-        <button @click="submit" class="bg-pink-900 text-white px-5 py-2 rounded-lg mx-3 my-3 transition-300 hover:bg">add</button>
+        <button @click="submit" class="bg-pink-900 text-black px-5 py-2 rounded-lg mx-3 my-3 transition-300 hover:bg">add</button>
     </form>
     
 
@@ -34,5 +34,6 @@ onMounted(async()=>{
     <li v-for= "item in data">
         {{ item.title }}
     </li>
+
 </ul> 
 </template>
